@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+// import homeLogo from "../../Assets/home-main.svg";
+import mainPicture from "../../Assets/mainPicture.jpg";
+import image2 from "../../Assets/main-image.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -22,7 +24,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> Aradhya Asthana</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -32,10 +34,10 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={image2}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{ maxHeight: "450px" , borderRadius: "48%"}}
               />
             </Col>
           </Row>

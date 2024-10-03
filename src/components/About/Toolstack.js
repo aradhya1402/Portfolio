@@ -5,7 +5,6 @@ import AWSIcon from 'react-aws-icons/dist/aws/logo/AWS';
 import {
   SiVisualstudiocode,
   SiPostman,
-  SiWindows,
   SiJenkins,
   SiGit,
   SiFigma,

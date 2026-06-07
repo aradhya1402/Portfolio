@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineDownload } from "react-icons/ai";
-import { TbBrain } from "react-icons/tb";
 
 function PrintPortfolio() {
   return (

@@ -4,10 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -20,36 +17,25 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I have 4 years of experience in Software Development.
-              <br />
-              <br />I am proficient in languages like
-              <i>
-                <b className="purple"> Javascript, Java and Python. </b>
-              </i>
+              Software Engineer with{" "}
+              <b className="purple">5+ years of experience</b> building scalable
+              applications and backend systems.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Applications </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Machine Learning.
-                </b>
-              </i>
+              Experienced in{" "}
+              <b className="purple">
+                C#, Java, JavaScript, React, Node.js, Python, and cloud
+                technologies
+              </b>
+              . Passionate about{" "}
+              <b className="purple">system design, backend engineering</b>, and
+              creating reliable software solutions.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Angular</b>
-              </i>
+              Currently exploring{" "}
+              <b className="purple">AI applications, LLMs, and agentic systems</b>
+              , with a growing interest in building intelligent, AI-driven
+              products.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -86,16 +72,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/aradhyaasthana"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
+              
             </ul>
           </Col>
         </Row>

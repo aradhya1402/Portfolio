@@ -249,6 +249,7 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  pointer-events: none !important;
 }
 
 .home-header {
@@ -542,6 +543,111 @@ button:focus {
   padding-top: 10px !important;
 }
 
+/* Project tab nav */
+.project-tabs {
+  justify-content: center !important;
+  margin-bottom: 30px !important;
+  gap: 12px !important;
+}
+
+.project-tabs .nav-link {
+  color: #d0d0d0 !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(150, 75, 0, 0.4) !important;
+  border-radius: 25px !important;
+  padding: 8px 28px !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.project-tabs .nav-link:hover {
+  background-color: rgba(150, 75, 0, 0.3) !important;
+  color: #fff !important;
+  border-color: #964B00 !important;
+}
+
+.project-tabs .nav-link.active {
+  background-color: #964B00 !important;
+  color: #fff !important;
+  border-color: #964B00 !important;
+}
+
+/* Bullet list inside Deloitte project cards */
+.project-bullet-list {
+  padding-left: 1.2rem !important;
+  margin-bottom: 0 !important;
+  text-align: left !important;
+}
+
+.project-bullet-list li {
+  margin-bottom: 0.45rem !important;
+  line-height: 1.5 !important;
+}
+
+/* ServiceLink cards */
+.servicelink-card-view {
+  box-shadow: 0 4px 5px 3px rgba(104, 40, 5, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  border-top: 3px solid #964B00 !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.servicelink-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px #7b4e31 !important;
+}
+
+.servicelink-icon {
+  font-size: 2rem !important;
+  color: #c47a3a !important;
+  margin-bottom: 10px !important;
+}
+
+.servicelink-category {
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: #c47a3a !important;
+  margin-bottom: 6px !important;
+  font-weight: 600 !important;
+}
+
+.servicelink-title {
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  margin-bottom: 10px !important;
+}
+
+.servicelink-description {
+  color: #d8d8d8 !important;
+  line-height: 1.65 !important;
+  font-size: 0.92rem !important;
+  margin-bottom: 12px !important;
+}
+
+.servicelink-metrics {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-top: 4px !important;
+}
+
+.metric-badge {
+  background-color: rgba(150, 75, 0, 0.25) !important;
+  border: 1px solid rgba(150, 75, 0, 0.6) !important;
+  color: #e8a96a !important;
+  border-radius: 12px !important;
+  padding: 3px 12px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+}
+
 /* --------- */
 /* About */
 /* --------- */
@@ -595,6 +701,20 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
+}
+
+.about-para {
+  text-align: justify !important;
+  line-height: 1.75 !important;
+  margin-bottom: 1rem !important;
+  font-size: 1.05rem !important;
+}
+
+.about-hobbies-label {
+  text-align: left !important;
+  margin-bottom: 0.4rem !important;
+  font-size: 1.05rem !important;
+  opacity: 0.85 !important;
 }
 
 @media (max-width: 767px) {
@@ -744,4 +864,208 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* --------- */
+/* Portfolio PDF Print Page */
+/* --------- */
+.print-portfolio {
+  background: #fff;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.print-controls {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.print-download-btn {
+  background-color: #964B00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.print-download-btn:hover {
+  background-color: #be6021;
+}
+
+.print-hint {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.print-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 30px 40px 60px;
+  color: #111;
+  font-family: Georgia, serif;
+}
+
+.print-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.print-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.print-title {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.print-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.print-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 18px 0;
+}
+
+.print-section {
+  margin-bottom: 18px;
+}
+
+.print-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #964B00;
+  margin-bottom: 10px;
+}
+
+.print-body {
+  font-size: 0.93rem;
+  line-height: 1.7;
+  color: #222;
+}
+
+.print-job {
+  margin-bottom: 16px;
+}
+
+.print-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.print-company {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #111;
+}
+
+.print-job-meta {
+  font-size: 0.82rem;
+  color: #555;
+}
+
+.print-bullets {
+  margin: 0;
+  padding-left: 1.3rem;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: #222;
+}
+
+.print-bullets li {
+  margin-bottom: 5px;
+}
+
+.print-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 20px;
+  font-size: 0.88rem;
+  color: #222;
+}
+
+.print-skill-group {
+  display: flex;
+  gap: 8px;
+}
+
+.print-skill-label {
+  font-weight: 700;
+  min-width: 80px;
+  color: #444;
+}
+
+.print-education {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.print-edu-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+.print-school {
+  font-weight: 600;
+  color: #111;
+}
+
+.print-edu-meta {
+  color: #555;
+  font-size: 0.85rem;
+}
+
+/* --------- */
+/* @media print */
+/* --------- */
+@media print {
+  .no-print,
+  .navbar,
+  footer {
+    display: none !important;
+  }
+
+  .print-portfolio {
+    padding-top: 0;
+  }
+
+  .print-content {
+    padding: 20px;
+  }
+
+  .print-section-title {
+    color: #5c2e00;
+  }
+
+  .print-download-btn {
+    display: none;
+  }
 }

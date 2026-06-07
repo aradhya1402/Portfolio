@@ -13,6 +13,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { BsFilePdf } from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -90,9 +91,17 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-           
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/portfolio-pdf"
+                onClick={() => updateExpanded(false)}
+              >
+                <BsFilePdf style={{ marginBottom: "2px" }} /> Portfolio
+              </Nav.Link>
+            </Nav.Item>
 
-           
+
           </Nav>
         </Navbar.Collapse>
       </Container>
